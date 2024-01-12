@@ -110,7 +110,7 @@ const ExpenseItem = (props) => {
        <td>{currency}{props.cost}</td>
        <td><FaPlusCircle size='1.5em' color="green" onClick={event=> increaseAllocation(props.name)}></FaPlusCircle></td>
        <td><FaMinusCircle size='1.5em' color="red" onClick={event=> decreaseAllocation(props.name)}></FaMinusCircle></td>
-       <td><FaTimesCircle size='1.5em' color="red" onClick={handleDeleteExpense}></FaTimesCircle></td>
+       <td><FaTimesCircle size='1.5em' color="black" onClick={handleDeleteExpense}></FaTimesCircle></td>
        </tr>
    );
 };
@@ -123,6 +123,3 @@ const ExpenseItem = (props) => {
 
 
 export default ExpenseItem;
-
-
-
